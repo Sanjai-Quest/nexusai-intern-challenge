@@ -43,16 +43,16 @@ Run the script to see the timing comparison:
 ```bash
 python task3/parallel_fetcher.py
 ```
-**Example Output:**
+**Timing Results (Verified):**
 ```text
 --- Starting Sequential Fetch ---
-Sequential Fetch Time: 845.20ms
+Sequential Fetch Time: 909.68ms
 
 --- Starting Parallel Fetch ---
-Parallel Fetch Time: 382.15ms
+Parallel Fetch Time: 327.87ms
 Data Complete: True
 ```
-*Observation:* Parallel fetching is ~2.2x faster as it only takes as long as the slowest request (CRM), whereas sequential takes the sum of all three.
+*Observation:* Parallel fetching achieved a **2.77x speed improvement** over sequential fetching, as it only takes roughly as long as the slowest request (CRM), while sequential takes the sum of all three.
 
 ### Task 4: Escalation Engine & Tests
 Run the unit tests using pytest:
